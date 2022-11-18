@@ -5,13 +5,32 @@
   <title>hugginsio (Kyle Huggins)</title>
   <meta http-equiv="refresh" content="0; url='https://www.github.com/hugginsio'" />
   <style>
+    :root {
+      --foreground: #c9d1d9;
+      --background: #0d1117;
+    }
+
+    @media screen and (prefers-color-scheme: light) {
+      :root {
+        --foreground: #24292f;
+        --background: #ffffff;
+      }
+    }
+
     html,
     body {
       height: 100%;
+      font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     }
 
     body {
       margin: 0;
+      background-color: var(--background);
+      color: var(--foreground);
+    }
+
+    a {
+      color: var(--foreground);
     }
 
     .container {

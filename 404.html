@@ -1,14 +1,18 @@
 <!doctype html>
 <html>
     <head>
-        <title>hugginsio (Kyle Huggins)</title>
+        <title>hugginsio (Kyle Huggins) - Redirecting...</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/png" href="https://huggins.io/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/svg+xml" href="https://huggins.io/favicon.svg" />
         <link rel="shortcut icon" type="image/x-icon" href="https://huggins.io/favicon.ico" />
         <link rel="stylesheet" href="/style.css" />
-        <meta http-equiv="refresh" content="0; url='https://www.github.com/hugginsio'" />
+        <script>
+            const currentPath = window.location.pathname;
+            const path = currentPath.startsWith("/") ? currentPath.substring(1) : currentPath;
+            window.location.href = `https://github.com/hugginsio/${path}`;
+        </script>
     </head>
 
     <body>
